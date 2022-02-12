@@ -1,0 +1,9 @@
+Test started at 2022-02-12 20:14:52.426543
+Test Case: Empty Username | Status: PASS | Server Response: "Username Cannot be empty" | Date: 02/12/2022, 20:14:52
+Test Case: Empty Password | Status: FAIL | Server Response: "Password Cannot be empty""Wrong Password" | Expected: Password Cannot be empty | Date: 02/12/2022, 20:14:52
+Test Case: Username not In DB | Status: PASS | Server Response: "No users Found with this username" | Date: 02/12/2022, 20:14:52
+Test Case: Username format isn't acceptable | Status: PASS | Server Response: "Username contains characters that are not allowed" | Date: 02/12/2022, 20:14:52
+Test Case: Wrong Password | Status: PASS | Server Response: "Wrong Password" | Date: 02/12/2022, 20:14:53
+A total of 5 tests were completed.
+4 tests were successfull and 1 tests failed
+Test finished at 02/12/2022, 20:14:53

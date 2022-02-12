@@ -1,0 +1,72 @@
+:root {
+  --blue: rgb(27, 107, 255);
+  --white: #ffffff;
+}
+body {
+  background: rgb(0, 212, 255);
+  background: linear-gradient(
+    90deg,
+    rgba(0, 212, 255, 1) 0%,
+    rgba(164, 255, 237, 1) 100%
+  );
+  font-family: "Roboto", sans-serif;
+  display: flex;
+}
+article {
+  width: min-content;
+  height: 65vh;
+  margin: auto;
+  background-color: #f0f0f0;
+  border-radius: 4px;
+  margin-top: 50px;
+  display: flex;
+}
+form {
+  padding: 0 5em;
+  margin: auto;
+  width: 35vw;
+  display: flex;
+  flex-direction: column;
+}
+form h2 {
+  letter-spacing: 3px;
+  font-size: small;
+  margin: 10px;
+  margin-left: 0;
+  color: rgb(120, 120, 120);
+  transition: 200ms;
+}
+article h1 {
+  color: var(--blue);
+  margin-bottom: 2em;
+}
+article .blue-border {
+  background-color: var(--blue);
+  padding: 0 0.5em;
+  border-radius: 0px 4px 4px 0px;
+  height: 100%;
+}
+input {
+  border: none;
+  background-color: #dddddd;
+  font-size: 24px;
+  padding: 12px;
+  margin-bottom: 20px;
+  border-radius: 4px;
+  color: rgb(54, 54, 54);
+}
+input[type="submit"] {
+  cursor: pointer;
+  border: 0;
+  background-color: var(--blue);
+  color: #f0f0f0;
+  padding: 0.5em;
+  border-radius: 4px;
+  font-size: 18px;
+}
+button:hover {
+  background-color: rgb(23, 87, 204);
+}
+.blue {
+  color: var(--blue);
+}

@@ -1,0 +1,6 @@
+description,username,password,submit,expected result
+Empty Username,,teste,Log in,Username Cannot be empty
+Empty Password,teste,,Log in,Password Cannot be empty
+Username not In DB,inexistente,password,Log in,No users Found with this username
+Username format isn't acceptable,$)d e,password,Log in,Username contains characters that are not allowed
+Wrong Password,teste,password,Log in,Wrong Password

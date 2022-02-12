@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/index.css" />
+    <title>Login</title>
+  </head>
+  <body>
+    <article>
+      <form action="API/index.php" method="post" autocomplete="off">
+        <h1>ACCOUNT LOGIN</h1>
+        <h2 id="usernameText" class="text">USERNAME</h2>
+        <input
+          type="text"
+          name="username"
+          id="name"
+          onfocus="changeColor('usernameText')"
+          onfocusout="changeColor('nothing')"
+        />
+        <h2 id="pwdText" class="text">PASSWORD</h2>
+
+        <input
+          type="password"
+          name="pwd"
+          id="pwd"
+          onfocus="changeColor('pwdText')"
+          onfocusout="changeColor('nothing')"
+        />
+        <input type="submit" value="Log in" name="submit" />
+      </form>
+      <div class="blue-border"></div>
+    </article>
+
+    <script>
+      function changeColor(id) {
+        var texts = document.getElementsByClassName("text");
+
+        for (let index = 0; index < texts.length; index++) {
+          const element = texts[index];
+          element.classList.remove("blue");
+        }
+        document.getElementById(id).classList.add("blue");
+      }
+    </script>
+  </body>
+</html>
